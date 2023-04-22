@@ -1,6 +1,6 @@
 import { pool } from "../db";
 
-const getNearestParkingSpotLocation = async (req, res, next) => {
+const getNearestParkingSpotLocation = async (req, res) => {
   const { lat, long } = req.query;
 
   if (!lat || !long) {
@@ -30,7 +30,7 @@ const getNearestParkingSpotLocation = async (req, res, next) => {
   return res.status(200).json(rows[0]);
 };
 
-const recheckParkSpotById = async (req, res, next) => {
+const recheckParkSpotById = async (req, res) => {
   const { id } = req.params;
 
   if (id === undefined || id === null) return;
