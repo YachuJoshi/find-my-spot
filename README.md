@@ -18,8 +18,4 @@ Log in the application and find the perfect parking spot for your vehicle.
 
 ### Result:
 
-![final-result](./extra/result.gif)
-
-<p align=center>
-    <em>Fig: Find My Spot Result</em>
-</p>
+https://user-images.githubusercontent.com/51167857/233797134-2e33de63-cc64-45ec-b810-8f2f04e91082.mov
