@@ -1,0 +1,94 @@
+@import '../styles/mixins.scss';
+
+.Wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.Background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-image: linear-gradient(to right bottom, rgba(26, 32, 33, .8), rgba(26, 32, 33, .8)), url('../image/background.jpg');
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.FormContainer {
+  width: 100%;
+}
+
+.Heading {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  color: #fb564c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.Form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .VehicleOptionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Option {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+      width: 150px;
+      border: none;
+      background: #fff;
+      border-radius: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &.Chosen {
+        background: #ddd;
+        transform: translateY(-6px);
+      }
+
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+  .SubmitBtn {
+    margin-top: 24px;
+    padding: 12px;
+    width: 300px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #e04753;
+    color: #ffffff;
+  }
+}

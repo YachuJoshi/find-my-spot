@@ -1,0 +1,59 @@
+@import '../styles/mixins.scss';
+
+.Wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.Background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-image: linear-gradient(to right bottom, rgba(26, 32, 33, .8), rgba(26, 32, 33, .8)), url('../image/background.jpg');
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.LoginModal {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .Heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: #fb564c;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .LoginBtn {
+    padding: 12px;
+    width: 300px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+
+    .Logo {
+      height: 20px;
+      width: 20px;
+      margin-right: 6px;
+    }
+  }
+}
